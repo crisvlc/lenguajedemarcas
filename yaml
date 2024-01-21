@@ -40,3 +40,68 @@ Además, el fichero YAML evita que el usuario tenga que especificar todos los pa
 
 Otra de sus ventajas es que, como se ha mencionado anteriormente en este artículo, un fichero YAML admite un numeroso grupo de tipos de datos, como diccionarios, matrices, listas y escalares. Además, es compatible con lenguajes de programación como JavaScript, Python, Java o Rubí, entre otros.
 
+Listas
+ --- # Películas favoritas, formato de bloque
+ - BotijoAzul
+ - BotijoVerde
+ - Viridiana
+ - Psicosis
+ ...
+ --- # Lista de la compra, formato en línea
+ [leche, pan, huevos]
+ [chorizo, morcilla, botijo, pollo]
+
+
+
+Vectores asociativos
+
+ --- # Bloque
+ nombre: Pepe López
+ edad: 33
+
+ --- # En  línea
+ {nombre: Pepe López, edad: 33}
+
+
+
+Literales de bloque
+
+Preservando retornos de línea
+ --- |
+  El texto mantiene su estructura,
+  en el sentido que preserva los retornos de línea.
+  
+  Esto incluye también líneas en blanco.
+
+
+Ignorando retornos de línea
+
+SAYO
+ --- >
+  El texto rodeado 
+  será formateado 
+  como un único
+  párrafo
+  
+  Las líneas en blanco
+  denotan saltos de párrafo.
+
+
+
+Listas de vectores asociativos
+
+ - {nombre: Pepe López, edad: 33}
+ - nombre: Maria Garcia
+   edad: 27
+
+
+
+Vectores asociativos de listas
+
+ hombres: [Pepe Lopez, Guillermo Garcia]
+ mujeres:
+  - María García
+  - Susana Márquez
+
+
+
