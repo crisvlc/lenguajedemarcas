@@ -1,0 +1,79 @@
+# JSON
+
+JSON es un formato de texto utilizado para almacenar y transmitir datos estructurados. Es una alternativa más ligera al lenguaje XML y se utiliza comúnmente en aplicaciones web. JSON es un acrónimo de *JavaScript Object Notation* y se deriva de la sintaxis de objetos de JavaScript. Su objetivo principal es el acceso, almacenamiento e intercambio de datos.
+
+La sintaxis de JSON funciona de manera similar a JavaScript. Los datos se organizan en pares clave-valor, separados por comas, y se agrupan en objetos que se delimitan con llaves. Los objetos pueden anidarse dentro de otros objetos o en arreglos, que se delimitan con corchetes.
+
+JSON es compatible con muchos lenguajes de programación y se utiliza ampliamente en aplicaciones web y móviles. Los archivos JSON son fáciles de leer y escribir para humanos y máquinas, lo que los hace ideales para el intercambio de datos entre diferentes sistemas.
+# Sintaxis JSON
+
+Un archivo JSON está compuesto principalmente por claves (Keys) y valores (Values). Aquí hay algunas pautas sobre la sintaxis:
+
+- Las claves deben ser cadenas de caracteres (strings). Se representan con una secuencia de caracteres rodeados de comillas.
+- Los valores pueden ser cualquier tipo de dato JSON válido, como arreglos (arrays), objetos, cadenas (strings), booleanos, números o nulos.
+- Un objeto JSON se delimita con llaves `{}` y puede contener dos o más pares de claves/valores separados por comas.
+- Cada par clave/valor se representa con la clave seguida por dos puntos `:` para separarla del valor.
+
+Ejemplo de un objeto JSON básico:
+
+```json
+{
+  "nombre": "Ejemplo",
+  "edad": 25,
+  "activo": true,
+  "hobbies": ["lectura", "viajes"],
+  "direccion": {
+    "calle": "123 Main St",
+    "ciudad": "Ejemplolandia"
+  },
+  "nuloEjemplo": null
+
+
+
+
+
+
+
+
+
+A continuación, se muestra un ejemplo simple de definición de barra de menús usando JSON y XML.
+
+JSON:
+
+{
+    "menu": {
+        "id": "file",
+        "value": "File",
+        "popup": {
+            "menuitems": [
+                {
+                    "value": "New", "onclick": "CreateNewDoc()"
+                },{
+                    "value": "Open", "onclick": "OpenDoc()"
+                },{
+                    "value": "Close", "onclick": "CloseDoc()"
+                }
+            ]
+        }
+    }
+}
+Es una posible representación JSON del siguiente XML:14
+
+  <menu id="file" value="File">
+    <popup>
+      <menuitem value="New" onclick="CreateNewDoc()" />
+      <menuitem value="Open" onclick="OpenDoc()" />
+      <menuitem value="Close" onclick="CloseDoc()" />
+    </popup>
+  </menu>
+
+
+
+
+https://blog.hubspot.es/website/que-es-json
+
+https://developer.mozilla.org/es/docs/Learn/JavaScript/Objects/JSON
+
+https://es.wikipedia.org/wiki/JSON
+
+https://www.hostinger.es/tutoriales/que-es-json
